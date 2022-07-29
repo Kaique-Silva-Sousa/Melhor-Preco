@@ -1,4 +1,5 @@
 import funcoes
+import os
 
 while True:
     print("""\nO que deseja fazer?
@@ -48,3 +49,4 @@ while True:
             print('Opcao invalida')
     if close == 1:
         break
+    os.system('cls')
