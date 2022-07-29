@@ -38,11 +38,11 @@ while True:
         print('Escolha uma opcao valida!')
     close = 0
     while True:
-        fechar_programa = input('Caso queira parar digite [S]im ou [N]ão : ').upper()
+        fechar_programa = input('Se deseja continuar digite [S]im ou [N]ão : ').upper()
         if fechar_programa == 'S':
-            close = 1
             break
         elif fechar_programa == 'N':
+            close = 1
             break
         else:
             print('Opcao invalida')

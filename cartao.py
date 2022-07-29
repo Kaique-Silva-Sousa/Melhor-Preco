@@ -50,11 +50,19 @@ class Cartao:
 
     def valor_venda(self, valor):
         media = 0
-        print('\nDe Acordo com a porcentagem cobrada para cada cartão\n')
         for x,y in self._cartao.items():
             valor_novo = valor +(valor*y/100)
             media+= valor_novo
             print(f'Para o cartão: {x}  O preço ideal é de: {valor_novo:.2f}')
-        media = media / len(self._cartao)
-        print(f'\nO Preço médio ideal para o produto é de {media:.2f}')
+        try:
+            media = media / len(self._cartao)
+            print('\nDe Acordo com a porcentagem cobrada para cada cartão\n')
+            print(f'\nO Preço médio ideal para o produto é de {media:.2f}')
+        except ZeroDivisionError as error:
+            print('sua lista de cartoes está vazia!')
+            print('Use a opção cadastrar um novo cartão!')
+            print('Selecione [N]ão e tente novamente.')
+            pass
+
+
 
