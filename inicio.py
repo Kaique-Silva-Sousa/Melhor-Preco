@@ -34,7 +34,7 @@ while True:
     if escolha == 4:
         funcoes.venda()
 
-    else:
+    if escolha >4:
         print('Escolha uma opcao valida!')
     close = 0
     while True:
