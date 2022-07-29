@@ -1,4 +1,6 @@
-# Melhor-Preco
+# Scrip para ajudar a trabalhar com preços
+--- 
 
-## Sistema  onde voce pode cadastrar cartoes e a porcentagem cobrada por cada eles, criando um "banco de dados" em formato Json.
-## com essas informaçoes voce pode aplicar um preço e o script dirá o preço ideal para cada cartao e um preço medio com base na porcentagem de cada cartão.
+## Esse script cadastrar cartões e a porcentagem cobrada por cada um deles e armazazena em um arquivo Json.
+## Com isso o usuario pode verificar qual seria o preço ideal para o produto dele de acordo com a porcentagem cobrada por cada cartão,
+## Alem de o script retornar o valor médio com base em todos os cartões.
